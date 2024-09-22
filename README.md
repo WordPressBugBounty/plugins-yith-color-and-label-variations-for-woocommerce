@@ -1,0 +1,1 @@
+# plugins-yith-color-and-label-variations-for-woocommerce
