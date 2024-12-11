@@ -33,7 +33,6 @@ if ( ! class_exists( 'YITH_WCCL' ) ) {
 		 */
 		public function __construct() {
 
-			add_action( 'plugins_loaded', array( $this, 'plugin_fw_loader' ), 15 );
             add_action( 'before_woocommerce_init', array( $this, 'declare_wc_features_support' ) );
 
 
@@ -47,21 +46,6 @@ if ( ! class_exists( 'YITH_WCCL' ) ) {
 			add_filter( 'product_attributes_type_selector', array( $this, 'attribute_types' ), 10, 1 );
 			// AJAX Filter plugin compatibility.
 			add_filter( 'yith_wcan_attribute_filter_item_args', array( $this, 'ajax_filter_compatibility' ), 10, 2 );
-		}
-
-		/**
-		 * Plugin Framework loader
-		 *
-		 * @since 1.0.0
-		 */
-		public function plugin_fw_loader() {
-			if ( ! defined( 'YIT_CORE_PLUGIN' ) ) {
-				global $plugin_fw_data;
-				if ( ! empty( $plugin_fw_data ) ) {
-					$plugin_fw_file = array_shift( $plugin_fw_data );
-					require_once $plugin_fw_file;
-				}
-			}
 		}
 
         /**

@@ -3,7 +3,7 @@
  * Plugin Name: YITH WooCommerce Color, Image & Label Variation Swatches
  * Plugin URI: https://yithemes.com/
  * Description: The <code><strong>YITH Color and Label Variations for WooCommerce</strong></code> allows you to customize the drop-down select of your variable products and buy product variations directly from shop pages. A must-have for every e-commerce. <a href="https://yithemes.com/" target="_blank">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>.
- * Version: 2.14.0
+ * Version: 2.14.1
  * Author: YITH
  * Author URI: https://yithemes.com/
  * Text Domain: yith-color-and-label-variations-for-woocommerce
@@ -13,7 +13,7 @@
  *
  * @author YITH <plugins@yithemes.com>
  * @package YITH WooCommerce Color and Label Variations
- * @version 2.14.0
+ * @version 2.14.1
  */
 
 /*
@@ -75,7 +75,7 @@ if ( ! defined( 'YITH_WCCL_DIR' ) ) {
 	define( 'YITH_WCCL_DIR', plugin_dir_path( __FILE__ ) );
 }
 if ( ! defined( 'YITH_WCCL_VERSION' ) ) {
-	define( 'YITH_WCCL_VERSION', '2.14.0' );
+	define( 'YITH_WCCL_VERSION', '2.14.1' );
 }
 
 if ( ! defined( 'YITH_WCCL_FILE' ) ) {
@@ -86,11 +86,10 @@ if ( ! defined( 'YITH_WCCL_SLUG' ) ) {
 	define( 'YITH_WCCL_SLUG', 'yith-color-and-label-variations-for-woocommerce' );
 }
 
-/* Plugin Framework Version Check */
-if ( ! function_exists( 'yit_maybe_plugin_fw_loader' ) && file_exists( YITH_WCCL_DIR . 'plugin-fw/init.php' ) ) {
-	require_once YITH_WCCL_DIR . 'plugin-fw/init.php';
+// Plugin Framework Loader.
+if ( file_exists( plugin_dir_path( __FILE__ ) . 'plugin-fw/init.php' ) ) {
+    require_once plugin_dir_path( __FILE__ ) . 'plugin-fw/init.php';
 }
-yit_maybe_plugin_fw_loader( YITH_WCCL_DIR );
 
 if ( ! function_exists( 'yith_wccl_constructor' ) ) {
 	/**
@@ -104,7 +103,7 @@ if ( ! function_exists( 'yith_wccl_constructor' ) ) {
 			return;
 		}
 
-		load_plugin_textdomain( 'yith-color-and-label-variations-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+        yith_plugin_fw_load_plugin_textdomain( 'yith-color-and-label-variations-for-woocommerce', basename( dirname( __FILE__ ) ) . '/languages' );
 
 		// Load required classes and functions.
 		require_once 'includes/functions.yith-wccl.php';
