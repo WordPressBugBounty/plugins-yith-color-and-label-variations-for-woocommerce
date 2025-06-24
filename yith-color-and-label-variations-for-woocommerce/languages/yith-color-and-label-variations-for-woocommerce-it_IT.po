@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Color and Label Variations\n"
 "Report-Msgid-Bugs-To: YITH <plugins@yithemes.com>\n"
-"POT-Creation-Date: 2024-03-20 22:18:50+00:00\n"
+"POT-Creation-Date: 2025-06-24 08:06:42+00:00\n"
 "PO-Revision-Date: 2018-11-09 10:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
@@ -116,7 +116,7 @@ msgstr "Immagine"
 msgid "Label"
 msgstr "Etichetta"
 
-#: init.php:53
+#: init.php:55
 msgid ""
 "You can't activate the free version of YITH WooCommerce Colors and Labels "
 "Variations while you are using the premium one."
