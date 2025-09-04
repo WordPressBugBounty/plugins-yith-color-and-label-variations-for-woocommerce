@@ -3,17 +3,17 @@
  * Plugin Name: YITH WooCommerce Color, Image & Label Variation Swatches
  * Plugin URI: https://yithemes.com/
  * Description: The <code><strong>YITH Color and Label Variations for WooCommerce</strong></code> allows you to customize the drop-down select of your variable products and buy product variations directly from shop pages. A must-have for every e-commerce. <a href="https://yithemes.com/" target="_blank">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>.
- * Version: 2.21.0
+ * Version: 2.22.0
  * Author: YITH
  * Author URI: https://yithemes.com/
  * Text Domain: yith-color-and-label-variations-for-woocommerce
  * Domain Path: /languages/
- * WC requires at least: 9.9
- * WC tested up to: 10.1
+ * WC requires at least: 10.0
+ * WC tested up to: 10.2
  *
  * @author YITH <plugins@yithemes.com>
  * @package YITH WooCommerce Color and Label Variations
- * @version 2.21.0
+ * @version 2.22.0
  *
  * Requires Plugins: woocommerce
  */
@@ -77,7 +77,7 @@ if ( ! defined( 'YITH_WCCL_DIR' ) ) {
 	define( 'YITH_WCCL_DIR', plugin_dir_path( __FILE__ ) );
 }
 if ( ! defined( 'YITH_WCCL_VERSION' ) ) {
-	define( 'YITH_WCCL_VERSION', '2.21.0' );
+	define( 'YITH_WCCL_VERSION', '2.22.0' );
 }
 
 if ( ! defined( 'YITH_WCCL_FILE' ) ) {
