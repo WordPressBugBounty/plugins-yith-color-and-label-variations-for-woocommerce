@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: color and label variations, WooCommcere, YITH, Variations, Variable Product
 Requires at least: 6.8
 Tested up to: 7.0
-Stable tag: 2.27.0
+Stable tag: 2.28.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html/
@@ -109,6 +109,10 @@ YITH is an independent company in the development and sales of WooCommerce plugi
 4. Image and label options on product page
 
 == Changelog ==
+= 2.28.0 - Released on 12 May 2026 =
+* New: support for WooCommerce 10.8
+* Update: YITH plugin framework
+
 = 2.27.0 - Released on 31 March 2026 =
 * New: support for WooCommerce 10.7
 * New: support for WordPress 7.0
